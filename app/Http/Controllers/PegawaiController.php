@@ -106,7 +106,11 @@ class PegawaiController extends Controller
 
     }
 
-    //----------------------------------------------------------------------------------------------------------------------------//
+    public function read($id)
+    {
+        $pegawai = DB::table('pegawai')->where('pegawai_id', $id)->get();
+        $mutasi = DB::table('mutasi')->where('IDPegawai', $id)->get();
 
-
+        return view('read',['pegawai' => $pegawai, 'mutasi' => $mutasi]);
+    }
 }

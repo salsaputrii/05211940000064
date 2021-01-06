@@ -49,8 +49,9 @@
             <td>{{ $p->pegawai_umur }}</td>
             <td>{{ $p->pegawai_alamat }}</td>
             <td>
-                <a href="/pegawai/edit/{{ $p->pegawai_id }}"><button type="button" class="btn btn-outline-success" style="margin-right: 10px">Edit</button></a></a>
-                <a href="/pegawai/hapus/{{ $p->pegawai_id }}"><button type="button" class="btn btn-outline-danger">Hapus</button></a></a>
+                <a href="/pegawai/edit/{{ $p->pegawai_id }}"><button type="button" class="btn btn-outline-success" style="margin-right: 5px">Edit</button></a></a>
+                <a href="/pegawai/hapus/{{ $p->pegawai_id }}"><button type="button" class="btn btn-outline-danger" style="margin-right: 5px">Hapus</button></a></a>
+                <a href="/pegawai/read/{{ $p->pegawai_id }}"><button type="button" class="btn btn-outline-info">Detail</button></a></a>
             </td>
         </tr>
     </tbody>
@@ -60,9 +61,31 @@
     </table>
 
     <br/>
- Halaman : {{ $pegawai->currentPage() }} <br/>
- Jumlah Data : {{ $pegawai->total() }} <br/>
- Data Per Halaman : {{ $pegawai->perPage() }} <br/>
+
+    <div class="row">
+        <div class="col-sm-2">
+            <label for="halaman">Halaman</label>
+        </div>
+        <div class="col-sm-6">
+            : {{ $pegawai->currentPage() }}
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-2">
+            <label for="jumlahData">Jumlah Data</label>
+        </div>
+        <div class="col-sm-6">
+            : {{ $pegawai->total() }}
+        </div>
+    </div >
+    <div class="row">
+        <div class="col-sm-2">
+            <label for="dataPerHalaman">Data Per Halaman</label>
+        </div>
+        <div class="col-sm-6">
+            : {{ $pegawai->perPage() }}
+        </div>
+    </div >
 
  <br/>
  {{ $pegawai->links() }}

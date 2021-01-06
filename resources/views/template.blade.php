@@ -17,6 +17,9 @@
             background-color: rgb(253, 242, 251);
             font-family: Arial, Helvetica, sans-serif;
         }
+        .d {
+            font-weight: bold;
+        }
     </style>
 </head>
 

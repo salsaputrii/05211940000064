@@ -64,9 +64,32 @@
 
     <br/>
 <!--kalo datanya masih sedikit jadinya kurang bagus. biar button 1 2 3 nya keluar datanya harus banyak-->
- Halaman : {{ $mutasi->currentPage() }} <br/>
- Jumlah Data : {{ $mutasi->total() }} <br/>
- Data Per Halaman : {{ $mutasi->perPage() }} <br/>
+
+
+<div class="row">
+    <div class="col-sm-2">
+        <label for="halaman">Halaman</label>
+    </div>
+    <div class="col-sm-6">
+        : {{ $mutasi->currentPage() }}
+    </div>
+</div >
+<div class="row">
+    <div class="col-sm-2">
+        <label for="jumlahData">Jumlah Data</label>
+    </div>
+    <div class="col-sm-6">
+        : {{ $mutasi->total() }}
+    </div>
+</div >
+<div class="row">
+    <div class="col-sm-2">
+        <label for="jumlahData">Data Per Halaman</label>
+    </div>
+    <div class="col-sm-6">
+        : {{ $mutasi->perPage() }}
+    </div>
+</div>
 
 <br/>
  {{ $mutasi->links() }}

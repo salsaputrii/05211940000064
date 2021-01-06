@@ -23,6 +23,8 @@ Route::get('/welcome', function () { //get merupakan cara melakukan pemanggilan 
 //public/halo ---> route/web.php ---> coba.blade.php
 Route::get('/halo', function () { return view('coba'); })->name('halo') ;
 
+//route pegawai
+
 Route::get('web', 'PegawaiController@coba');
 
 Route::get('pegawai', 'PegawaiController@index');
@@ -43,9 +45,10 @@ Route::get('/pegawai/hapus/{id}','PegawaiController@hapus');
 
 Route::get('/pegawai/cari','PegawaiController@cari');
 
+Route::get('/pegawai/read/{id}','PegawaiController@read');
 
-//------------------------------------------------------------------------------------------------------------------------------------------------//
 
+//route mutasi
 
 Route::get('mutasi', 'MutasiController@indexMutasi');
 
@@ -60,3 +63,4 @@ Route::get('/mutasi/hapusMutasi/{id}','MutasiController@hapusMutasi');
 Route::get('/mutasi/tambahMutasi','MutasiController@tambahMutasi');
 
 Route::get('/mutasi/cari','MutasiController@cari');
+

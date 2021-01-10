@@ -22,7 +22,7 @@
         <form action="/bolpen/updateBolpen" method="post">
 
             {{ csrf_field() }}
-            <input type="hidden" name="kodebolpen" value="{{ $b->kodebolpen }}"> <br/>
+            <input type="hidden" name="kodebolpen" value="{{ $b->kodebolpen }}">
             <!--field merk-->
             <div class="form-group">
                 <label for="merk">Merk Bolpen</label>

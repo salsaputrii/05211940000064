@@ -64,3 +64,19 @@ Route::get('/mutasi/tambahMutasi','MutasiController@tambahMutasi');
 
 Route::get('/mutasi/cari','MutasiController@cari');
 
+
+//route bolpen
+
+Route::get('/bolpen','BolpenController@indexBolpen');
+
+Route::get('/bolpen/tambahBolpen','BolpenController@tambahBolpen');
+
+Route::post('/bolpen/storeBolpen','BolpenController@storeBolpen');
+
+Route::get('/bolpen/editBolpen/{id}','BolpenController@editBolpen');
+
+Route::post('/bolpen/updateBolpen','BolpenController@updateBolpen');
+
+Route::get('/bolpen/hapusBolpen/{id}','BolpenController@hapusBolpen');
+
+Route::get('/bolpen/cari','BolpenController@cari');

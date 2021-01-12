@@ -80,3 +80,14 @@ Route::post('/bolpen/updateBolpen','BolpenController@updateBolpen');
 Route::get('/bolpen/hapusBolpen/{id}','BolpenController@hapusBolpen');
 
 Route::get('/bolpen/cari','BolpenController@cari');
+
+
+//route mahasiswa
+
+Route::get('/mahasiswa','MahasiswaController@indexMahasiswa');
+
+Route::get('/mahasiswa/tambahMahasiswa','MahasiswaController@tambahMahasiswa');
+
+Route::post('/mahasiswa/storeMahasiswa','MahasiswaController@storeMahasiswa');
+
+Route::get('/mahasiswa/hapusMahasiswa/{id}','MahasiswaController@hapusMahasiswa');

@@ -44,6 +44,9 @@
           <li class="nav-item">
             <a class="nav-link" href="https://www.malasngoding.com/">malasngoding</a>
           </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/mahasiswa">Mahasiswa</a>
+          </li>
         </ul>
       </nav>
 
